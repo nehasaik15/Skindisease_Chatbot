@@ -8,6 +8,12 @@ Clone the repository
 ```bash
 git clone https://github.com/nehasaik15/Skindisease_Chatbot.git
 ```
+
+Navigate into the project directory
+
+```bash
+cd Skindisease_Chatbot
+```
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
