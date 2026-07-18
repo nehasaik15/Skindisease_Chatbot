@@ -6,7 +6,7 @@
 Clone the repository
 
 ```bash
-git clonehttps://github.com/husnaakhan07/skin_disease_chatbot.git
+git clone https://github.com/nehasaik15/Skindisease_Chatbot.git
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
