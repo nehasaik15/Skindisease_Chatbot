@@ -1,67 +1,98 @@
-# Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-AWS
+# DermAI - AI-Powered Skin Disease Chatbot
 
-# How to run?
-### STEPS:
+DermAI is an AI-powered medical chatbot that combines **deep learning-based skin disease classification** with **Retrieval-Augmented Generation (RAG)** to provide preliminary skin condition information and medical knowledge assistance.
 
-Clone the repository
+## How to Run?
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/nehasaik15/Skindisease_Chatbot.git
 ```
 
-Navigate into the project directory
+Navigate into the project directory:
 
 ```bash
 cd Skindisease_Chatbot
 ```
-### STEP 01- Create a conda environment after opening the repository
+
+---
+
+### 2. Create a Conda Environment
 
 ```bash
 conda create -n medibot python=3.10 -y
-```
-
-```bash
 conda activate medibot
 ```
 
+---
 
-### STEP 02- install the requirements
+### 3. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
+---
 
-### Create a `.env` file in the root directory and add your Pinecone & openai credentials as follows:
+### 4. Configure API Keys
 
-```ini
-PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-GROQ_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+Create a `.env` file in the root directory and add your Pinecone and Groq API credentials:
+
+```env
+PINECONE_API_KEY="your_pinecone_api_key"
+GROQ_API_KEY="your_groq_api_key"
 ```
 
+---
+
+### 5. Store Embeddings in Pinecone
+
+Run the following command to generate embeddings and store medical knowledge in the Pinecone vector database:
 
 ```bash
-# run the following command to store embeddings to pinecone
 python store_index.py
 ```
 
+---
+
+### 6. Run the Application
+
+Start the chatbot:
+
 ```bash
-# Finally run the following command
 python app.py
 ```
 
-Now,
-```bash
-open up localhost:
+Open your browser and visit:
+
+```
+http://localhost:5000
 ```
 
+---
 
-### Techstack Used:
+## Tech Stack Used
 
+### Programming Language
 - Python
+
+### Artificial Intelligence & LLM Frameworks
 - LangChain
-- Flask
-- GPT
+- Groq LLM
+
+### Machine Learning & Deep Learning
+- PyTorch
+- ResNet-18
+- Computer Vision
+
+### Vector Database
 - Pinecone
 
+### Web Framework
+- Flask
 
-
+### AI Techniques
+- Supervised Learning
+- Transfer Learning
+- Retrieval-Augmented Generation (RAG)
